@@ -1,3 +1,16 @@
+if(window.location.pathname.includes('github')){
+document.getElementById('nav')
+        .innerHTML += 
+        `<div class="nav">
+            <ul>
+                <li><a href="site-dewitt-folio/">home</a></li>
+                <li><a href="site-dewitt-folio/portfolio/">portfolio</a></li>
+                <li><a href="site-dewitt-folio/about/">about me</a></li>
+                <li><a href="site-dewitt-folio/contact/">contact</a></li>
+            </ul>
+        </div>`;
+}
+else{
 document.getElementById('nav')
         .innerHTML += 
         `<div class="nav">
@@ -8,3 +21,4 @@ document.getElementById('nav')
                 <li><a href="../contact/">contact</a></li>
             </ul>
         </div>`;
+}
