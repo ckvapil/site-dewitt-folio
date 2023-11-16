@@ -1,6 +1,4 @@
-console.log(window.location.pathname);
-console.log(window.location.pathname.includes('github'));
-if(window.location.pathname.includes('github')){
+if(window.location.href.includes('github')){
 document.getElementById('nav')
         .innerHTML = 
         `<div class="nav">
