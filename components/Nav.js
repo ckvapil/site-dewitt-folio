@@ -1,6 +1,8 @@
+console.log(window.location.pathname);
+console.log(window.location.pathname.includes('github'));
 if(window.location.pathname.includes('github')){
 document.getElementById('nav')
-        .innerHTML += 
+        .innerHTML = 
         `<div class="nav">
             <ul>
                 <li><a href="/site-dewitt-folio/">home</a></li>
@@ -12,7 +14,7 @@ document.getElementById('nav')
 }
 else{
 document.getElementById('nav')
-        .innerHTML += 
+        .innerHTML = 
         `<div class="nav">
             <ul>
                 <li><a href="/">home</a></li>
