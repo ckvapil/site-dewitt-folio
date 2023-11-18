@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
-    --color-primary: #165144;
+    --color-primary: #38761d;
 }
 
 
@@ -21,12 +23,32 @@ body *{
 h1,h2,h3,h4{
     margin: 0;
 }
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+h2{
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+h3{
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 0 0 10px 0;
+}
+p{
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 0.8rem;
+}
 
 .container{
     padding: 2rem;
+    width: 100%;
     max-width: 1000px;
     min-width: 360px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .nav ul{
@@ -45,7 +67,7 @@ h1,h2,h3,h4{
 }
 
 .header *{
-    margin: 1.1em 0;
+    margin: 2rem 0;
 }
 
 .h-light{
@@ -75,12 +97,17 @@ h1,h2,h3,h4{
     width: 100%;
 }
 
-.portfolio-nav{
-    margin: 0 20px 0 0;
-    flex-grow: 1;
-    min-width: 140px;
+
+.portfolio-header{
+    display: flex;
 }
-.portfolio-nav-item{
+.portfolio-header .nav{
+    margin: 0 20px 0 0;
+    flex-grow: 0;
+    min-width: 120px;
+}
+.portfolio-header .nav-item{
+    font-size: 0.875rem;
     cursor:pointer;
     padding: 0.5rem 0 0.5rem 5px;
     border-left: 3px solid rgba(0,0,0,0);
@@ -92,40 +119,41 @@ h1,h2,h3,h4{
         border-left: 3px solid var(--color-primary);
     }
 }
-
-.portfolio-infos, .portfolio-samples{
-    margin: 0.4rem 20px 0 0;
-}
-.portfolio-infos{
-    min-width: 300px;
-    width: 30%;
+.portfolio-header .intro{
+    padding-top: 0.5rem;
+    max-width: 600px;
     flex-grow: 1;
 }
-.portfolio-info:not(.active),.portfolio-sample:not(.active){
-    opacity: 0;
+
+.portfolio-content{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
 }
-.portfolio-info .active,.portfolio-sample .active{
-    opacity: 1;
+.portfolio-content .info{
+    min-width: 200px;
+    flex-grow: 1;
+    padding:0 10px 0 0;
+    width: 30%;
+}
+.portfolio-content .artifacts{
+    min-width: 360px;
+    flex-grow: 2.333;
+    width: 70%;
 }
 
-.portfolio-info p.description{
-    font-size: 0.85rem;
-    line-height: 1.2rem;
+.portfolio-content .title-stats p.description{
+    line-height: 1rem;
     font-style: italic;
 }
-.portfolio-info p.stats{
-    font-size: 0.85rem;
-    line-height: 1.2rem;
+.portfolio-content .title-stats p.stats{
+    font-size: 0.7rem;
+    line-height: 0.9rem;
 }
 
-.portfolio-samples{
-    min-width: 400px;
-    flex-grow: 1;
-}
-
-.portfolio-sample .script{
+.portfolio-content .artifacts .script{
     background-color: #FFF;
-    padding: 10%;
+    padding: 7%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9rem;
     max-height: 75vh;
