@@ -43,7 +43,7 @@ p{
 }
 
 .container{
-    padding: 2rem;
+    padding: 3%;
     width: 100%;
     max-width: 1000px;
     min-width: 360px;
@@ -62,8 +62,9 @@ p{
 }
 .nav li a{
     text-decoration: none;
-    padding: 0 0.9em 0 0;
+    padding: 0 1.1rem 0 0;
     color: inherit;
+    font-size: 0.75rem;
 }
 
 .header *{
@@ -137,7 +138,7 @@ p{
     width: 30%;
 }
 .portfolio-content .artifacts{
-    min-width: 360px;
+    min-width: 320px;
     flex-grow: 2.333;
     width: 70%;
 }
