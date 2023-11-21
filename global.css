@@ -172,3 +172,21 @@ nav ul li img{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+.content .about-pic{
+    width: 25%;
+    padding:0 10px 0 0;
+    flex-grow: 1;
+    min-width: 150px;
+}
+.content .about-pic img{
+    width: 100%;
+}
+.content .about-cv{
+    background-color: #eee;
+    height: 75vh;
+    width: 75%;
+    min-width: 200px;
+    max-height: 75vh;
+    flex-grow: 1;
+}
