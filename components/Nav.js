@@ -15,6 +15,7 @@ document.getElementById('nav')
         .innerHTML = 
         `<div class="nav">
             <ul>
+                <!--<li><img src="../img/logo-b.png"></li>-->
                 <li><a href="/">home</a></li>
                 <li><a href="/portfolio/">portfolio</a></li>
                 <li><a href="/about/">about me</a></li>
