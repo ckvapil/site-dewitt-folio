@@ -13,7 +13,7 @@ body{
     font-family: 'Montserrat',sans-serif;
     color: var(--color-primary);
     margin: 0;
-    background-color: #EEE;;
+    background-color: #FFF;;
 }
 
 body *{
@@ -51,25 +51,25 @@ p{
     overflow: hidden;
 }
 
-.nav ul{
+nav ul{
     display: flex;
     list-style-type:none;
     align-items: center;    
     margin: 0;
     padding: 0;
 }
-.nav ul li{
+nav ul li{
     flex-shrink: 0;
     padding: 0 1.1rem 0 0;
     margin: 0;
 }
-.nav ul li a{
+nav ul li a{
     text-decoration: none;
     color: inherit;
     font-size: 0.75rem;
     margin: 0;
 }
-.nav ul li img{
+nav ul li img{
     height: 45px;
     vertical-align: middle;
 }
@@ -108,7 +108,7 @@ p{
 .portfolio-header{
     display: flex;
 }
-.portfolio-header .nav{
+.portfolio-header .sub-nav{
     margin: 0 20px 0 0;
     flex-grow: 0;
     min-width: 120px;
@@ -160,6 +160,7 @@ p{
 
 .portfolio-content .artifacts .script{
     background-color: #FFF;
+    border: 8px solid #EEE;
     padding: 7%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9rem;

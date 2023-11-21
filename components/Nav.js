@@ -1,5 +1,5 @@
 if(window.location.href.includes('github')){
-document.getElementById('nav')
+document.getElementsByTagName('nav')[0]
         .innerHTML = 
         `<div class="nav">
             <ul>
@@ -11,7 +11,7 @@ document.getElementById('nav')
         </div>`;
 }
 else{
-document.getElementById('nav')
+document.getElementsByTagName('nav')[0]
         .innerHTML = 
         `<div class="nav">
             <ul>
